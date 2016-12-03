@@ -1,0 +1,28 @@
+{
+  "name": "team_gogo",
+  "version": "1.0.0",
+  "description": "Team Communication App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegirlfromipanema/gogo.git"
+  },
+  "keywords": [
+    "go",
+    "react"
+  ],
+  "author": "Maya Novarini (iam@mayanovarini.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegirlfromipanema/gogo/issues"
+  },
+  "homepage": "https://github.com/thegirlfromipanema/gogo#readme",
+  "devDependencies": {
+    "babel-loader": "^5.3.3",
+    "react": "^15.4.1",
+    "webpack": "^2.1.0-beta.20"
+  }
+}
