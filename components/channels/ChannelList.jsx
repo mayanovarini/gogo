@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import Channel from './Channel.jsx';
 
-class ChannelList extends Component {
+class ChannelList extends Component{
   render(){
     return (
-      <ul>
-        {
+      <ul>{
           this.props.channels.map( chan => {
-            <Channel
+            return <Channel
               channel={chan}
-              setChannel={this.props.setChannel}
+              key={chan.id}
+              {...this.props}
             />
           })
         }</ul>
@@ -17,9 +17,10 @@ class ChannelList extends Component {
   }
 }
 
-ChannelList.PropTypes = {
+ChannelList.propTypes = {
   channels: React.PropTypes.array.isRequired, // array is used for possibly containing many channels
-  setChannel: React.PropTypes.func.isRequired
+  setChannel: React.PropTypes.func.isRequired,
+  activeChannel: React.PropTypes.object.isRequired
 }
 
 export default ChannelList
