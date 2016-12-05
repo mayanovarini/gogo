@@ -21,6 +21,13 @@ class App extends Component{
     this.setState({activeChannel});
     //TO DO: GET CHANNELS MESSAGES
   }
+
+  setUserName(name){
+    let {users} = this.state;
+    users.push({id: users.length, name});
+    this.setState({users});
+    //TO DO : SEND TO SERVER
+  }
   render() {
     return (
       <div className='app'>
@@ -29,6 +36,10 @@ class App extends Component{
             {...this.state}
             addChannel={this.addChannel.bind(this)}
             setChannel={this.setChannel.bind(this)}
+          />
+          <UserSection
+            {...this.state}
+            setUserName={this.setUserName.bind(this)}
           />
         </div>
       </div>
