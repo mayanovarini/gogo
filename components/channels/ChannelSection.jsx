@@ -3,7 +3,7 @@ import ChannelForm from './ChannelForm.jsx';
 import ChannelList from './ChannelList.jsx';
 
 class ChannelSection extends Component{
-  render() {
+  render(){
     return (
       <div className='support panel panel-primary'>
         <div className='panel-heading'>

@@ -15,8 +15,8 @@ class ChannelForm extends Component{
           <input
             className='form-control'
             placeholder='Add Channel'
-            type="text"
-            ref="channel"
+            type='text'
+            ref='channel'
           />
         </div>
 
@@ -28,5 +28,6 @@ class ChannelForm extends Component{
 ChannelForm.propTypes = {
   addChannel: React.PropTypes.func.isRequired
 }
+
 
 export default ChannelForm
