@@ -26,6 +26,7 @@
     "webpack": "^2.1.0-beta.20"
   },
   "dependencies": {
+    "fecha": "^2.3.0",
     "react-dom": "^15.4.1"
   }
 }
